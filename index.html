@@ -7,81 +7,79 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8"/>
   </head>
 
   <body>
-
-<!--
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><button onclick="findPlace()" >Page 1</li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
+    <div class="navbar navbar-dark bg-dark" id="navbarcool">
+      <a class="navbar-brand">Gruppe 30</a>
     </div>
-  </nav>
--->
-
-    <img src="bilder/previous.png" onclick="topFunction()" id="myBtn" title="Go to top"></img>
-    <div class="innhold" id="first">
-      <img src="bilder/push-pin.png" alt="pin" class="pin"%>
+    <img src="bilder/previous.png" onclick="topFunction()" id="myBtn" title="Go to top"/>
+      <div class="col-md-6 col-md-offset-3" id="first">
         <h1>Bachelorprosjekt gruppe 30</h1>
-          <div class="informasjon">
-            <p>Oppdragsgiver: <a href="http://www.tingtun.no">Tingtun </a></p>
-            <p>Om prosjektet: Oppgaven tar for seg å måle effekten av tilgang til begrepsforklaringer for ulike brukergrupper, gjerne brukere med dysleksi eller fremmedspråklige (flyktninger). Testene skal avdekke effekter for hvor godt brukere kan forstå tekster, f.eks. målt ved å se på hvor lang tid det tar for å besvare forståelsesspørsmål. Testene kan evt. og gi opplysninger om hvordan løsningen kan utformes bedre for å forsterke effekten for ulike brukergrupper. Utformingen kan da gjelde både tekster, varianter av oppslagsmetoder eller presentasjonsformer.</p>
-          </div>
-    </div>
+        <hr>
+        <div class="informasjon">
+          <p>Oppdragsgiver: <a href="http://www.tingtun.no">Tingtun </a></p>
+          <p>Om prosjektet: Oppgaven tar for seg å måle effekten av tilgang til begrepsforklaringer for ulike brukergrupper,
+            gjerne brukere med dysleksi eller fremmedspråklige (flyktninger).
+            Testene skal avdekke effekter for hvor godt brukere kan forstå tekster, f.eks.
+            målt ved å se på hvor lang tid det tar for å besvare forståelsesspørsmål.
+            Testene kan evt. og gi opplysninger om hvordan løsningen kan utformes bedre for å forsterke effekten for ulike brukergrupper.
+            Utformingen kan da gjelde både tekster, varianter av oppslagsmetoder eller presentasjonsformer.</p>
+        </div>
+      </div>
 
-    <div class="innhold" id="second">
-      <img src="bilder/push-pin.png" alt="pin" class="pin"%>
-          <div class="informasjon">
-            <p>Studenter: </p>
+      <div class="col-md-6 col-md-offset-3" id="second">
+        <p>Studenter: </p>
+        <div class="col-md-6 col-sm-6">
+          <p class="text-center">Sigrid Riiser Kristiansen</p>
+          <p class="text-center">E-post: s181090@stud.hioa.no</p>
+        </div>
 
-            <div class="lenker">
-              <p>Statusrepport</p>
-              <a href=""></a>
-            </div>
-          </div>
-    </div>
+        <div class="col-md-6 col-sm-6">
+          <p class="text-center">Patrick Ingeberg</p>
+          <p class="text-center">E-post: s236303@stud.hioa.no</p>
+        </div>
+      </div>
 
-    <div class="innhold" id="third">
-        <img src="bilder/push-pin.png" alt="pin" class="pin"%>
-            <div class="logg">
-              <h3>Dag</h3>
-              <p>Skriver noe</p>
-              <p>Om prosjektet: Oppgaven tar for seg å måle effekten av tilgang til begrepsforklaringer for ulike brukergrupper, gjerne brukere med dysleksi eller fremmedspråklige (flyktninger). Testene skal avdekke effekter for hvor godt brukere kan forstå tekster, f.eks. målt ved å se på hvor lang tid det tar for å besvare forståelsesspørsmål. Testene kan evt. og gi opplysninger om hvordan løsningen kan utformes bedre for å forsterke effekten for ulike brukergrupper. Utformingen kan da gjelde både tekster, varianter av oppslagsmetoder eller presentasjonsformer.<p>
-                <p>Om prosjektet: Oppgaven tar for seg å måle effekten av tilgang til begrepsforklaringer for ulike brukergrupper, gjerne brukere med dysleksi eller fremmedspråklige (flyktninger). Testene skal avdekke effekter for hvor godt brukere kan forstå tekster, f.eks. målt ved å se på hvor lang tid det tar for å besvare forståelsesspørsmål. Testene kan evt. og gi opplysninger om hvordan løsningen kan utformes bedre for å forsterke effekten for ulike brukergrupper. Utformingen kan da gjelde både tekster, varianter av oppslagsmetoder eller presentasjonsformer.<p>
-                  <p>Om prosjektet: Oppgaven tar for seg å måle effekten av tilgang til begrepsforklaringer for ulike brukergrupper, gjerne brukere med dysleksi eller fremmedspråklige (flyktninger). Testene skal avdekke effekter for hvor godt brukere kan forstå tekster, f.eks. målt ved å se på hvor lang tid det tar for å besvare forståelsesspørsmål. Testene kan evt. og gi opplysninger om hvordan løsningen kan utformes bedre for å forsterke effekten for ulike brukergrupper. Utformingen kan da gjelde både tekster, varianter av oppslagsmetoder eller presentasjonsformer.<p>
-                    <p>Om prosjektet: Oppgaven tar for seg å måle effekten av tilgang til begrepsforklaringer for ulike brukergrupper, gjerne brukere med dysleksi eller fremmedspråklige (flyktninger). Testene skal avdekke effekter for hvor godt brukere kan forstå tekster, f.eks. målt ved å se på hvor lang tid det tar for å besvare forståelsesspørsmål. Testene kan evt. og gi opplysninger om hvordan løsningen kan utformes bedre for å forsterke effekten for ulike brukergrupper. Utformingen kan da gjelde både tekster, varianter av oppslagsmetoder eller presentasjonsformer.<p>
-                      <p>Om prosjektet: Oppgaven tar for seg å måle effekten av tilgang til begrepsforklaringer for ulike brukergrupper, gjerne brukere med dysleksi eller fremmedspråklige (flyktninger). Testene skal avdekke effekter for hvor godt brukere kan forstå tekster, f.eks. målt ved å se på hvor lang tid det tar for å besvare forståelsesspørsmål. Testene kan evt. og gi opplysninger om hvordan løsningen kan utformes bedre for å forsterke effekten for ulike brukergrupper. Utformingen kan da gjelde både tekster, varianter av oppslagsmetoder eller presentasjonsformer.<p>
-                        <p>Om prosjektet: Oppgaven tar for seg å måle effekten av tilgang til begrepsforklaringer for ulike brukergrupper, gjerne brukere med dysleksi eller fremmedspråklige (flyktninger). Testene skal avdekke effekter for hvor godt brukere kan forstå tekster, f.eks. målt ved å se på hvor lang tid det tar for å besvare forståelsesspørsmål. Testene kan evt. og gi opplysninger om hvordan løsningen kan utformes bedre for å forsterke effekten for ulike brukergrupper. Utformingen kan da gjelde både tekster, varianter av oppslagsmetoder eller presentasjonsformer.<p>
-            </div>
-    </div>
-
-    <script>
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-        function findPlace() {
-          document.getElementById.scrollFunction = "third";
-        }
-    </script>
-
-  </body>
+      <div class="col-md-6 col-md-offset-3" id="third">
+        <div class="col-md-4 col-sm-4" id="test1">
+          <p class="text-center">Statusrepport</p>
+          <img class="center-block" id="file" src="bilder/file.png" href=""/>
+        </div>
+        <div class="col-md-4 col-sm-4" id="test1">
+          <p class="text-center">Prosjektskisse</P>
+            <a href="http://student.cs.hioa.no/~s236303/bachelor/documents/Prosjektskisse.pdf"/>
+            <img class="center-block" id="file" src="bilder/file.png"/>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-4" id="test1">
+          <p class="text-center">Prosjektdefinisjon</p>
+          <a href="http://student.cs.hioa.no/~s236303/bachelor/documents/Prosjektdefinisjon.pdf">
+            <img class="center-block" id="file" src="bilder/file.png"/>
+          </a>
+        </div>
+      </div>
+    </body>
 </html>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    function findPlace() {
+      document.getElementById.scrollFunction = "third";
+    }
+</script>
