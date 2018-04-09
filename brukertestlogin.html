@@ -7,18 +7,159 @@
 </head>
 <body>
 
-  <div id="login_div" class="main-div">
-    <h3>Firebase Web login Example</h3>
-    <input type="email" placeholder="Email..." id="email_field" />
-    <input type="password" placeholder="Password..." id="password_field" />
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScgUt7OGHpiBKfLAqgTN93Rfg-WWXtJPDu-FFaYduYznEgbDg/formResponse"
+        target="_self"
+        id="bootstrapForm"
+        method="POST">
+      <fieldset>
+          <h2>Brukertest<br><small>Test testen</small></h2>
+      </fieldset>
 
-    <button onclick="login()">Login to Account</button>
-  </div>
 
-  <div id="user_div" class="loggedin-div">
-    <h3>Welcome User</h3>
-    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
-    <button onclick="logout()">Logout</button>
+      <!-- Field type: "choices" id: "1041628277" -->
+      <fieldset>
+          <legend for="1041628277">Hvordan var testen?</legend>
+          <div class="form-group">
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="entry.1630837830" value="Bra" required>
+                      Bra
+                  </label>
+              </div>
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="entry.1630837830" value="God" required>
+                      God
+                  </label>
+              </div>
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="entry.1630837830" value="Dårlig" required>
+                      Dårlig
+                  </label>
+              </div>
+          </div>
+      </fieldset>
+
+
+      <!-- Field type: "choices" id: "268867956" -->
+      <fieldset>
+          <legend for="268867956">En gang til? </legend>
+          <div class="form-group">
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="entry.714013866" value="Ja" required>
+                      Ja
+                  </label>
+              </div>
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="entry.714013866" value="Nei" required>
+                      Nei
+                  </label>
+              </div>
+          </div>
+      </fieldset>
+
+
+      <!-- Field type: "choices" id: "844482428" -->
+      <fieldset>
+          <legend for="844482428">Er denne testen bra? </legend>
+          <div class="form-group">
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="entry.685926297" value="Ja" required>
+                      Ja
+                  </label>
+              </div>
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="entry.685926297" value="Nei" required>
+                      Nei
+                  </label>
+              </div>
+          </div>
+      </fieldset>
+
+
+      <!-- Field type: "choices" id: "2110904007" -->
+      <fieldset>
+          <legend for="2110904007">Test for test</legend>
+          <div class="form-group">
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="entry.1590806461" value="Kanskje" required>
+                      Kanskje
+                  </label>
+              </div>
+              <div class="radio">
+                  <label>
+                      <input type="radio" name="entry.1590806461" value="Test" required>
+                      Test
+                  </label>
+              </div>
+          </div>
+      </fieldset>
+
+
+      <!-- Field type: "checkboxes" id: "230011094" -->
+      <fieldset>
+          <legend for="230011094">Hvilken mat liker du? </legend>
+          <div class="form-group">
+              <div class="checkbox">
+                  <label>
+                      <input type="checkbox" name="entry.1903227512" value="Taco" required>
+                      Taco
+                  </label>
+              </div>
+              <div class="checkbox">
+                  <label>
+                      <input type="checkbox" name="entry.1903227512" value="Pizza" required>
+                      Pizza
+                  </label>
+              </div>
+              <div class="checkbox">
+                  <label>
+                      <input type="checkbox" name="entry.1903227512" value="Kebab" required>
+                      Kebab
+                  </label>
+              </div>
+              <div class="checkbox">
+                  <label>
+                      <input type="checkbox" name="entry.1903227512" value="Test" required>
+                      Test
+                  </label>
+              </div>
+              <div class="checkbox">
+                  <label>
+                      <input type="checkbox" name="entry.1903227512" value="Fler valg?" required>
+                      Fler valg?
+                  </label>
+              </div>
+          </div>
+      </fieldset>
+
+
+      <!-- Field type: "short" id: "513876905" -->
+      <fieldset>
+          <legend for="513876905">Skriv noen ord</legend>
+          <div class="form-group">
+              <input id="1881841252" type="text" name="entry.1881841252" class="form-control" required>
+          </div>
+      </fieldset>
+
+      <input type="hidden" name="fvv" value="1">
+      <input type="hidden" name="fbzx" value="-6630418508512257197">
+      <!--
+          CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+          This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+          Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+          We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+      -->
+      <input type="hidden" name="pageHistory" value="0">
+
+      <input class="btn btn-primary" type="submit" value="Submit">
+  </form>
   </div>
 
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
