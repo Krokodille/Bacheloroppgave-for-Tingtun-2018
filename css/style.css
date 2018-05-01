@@ -6,7 +6,7 @@ p {
 }
 
 html{
-  background-color: #2F2F2F;
+  background-color: #3f3f3f;
   padding-bottom: 4%;
 }
 
@@ -19,12 +19,27 @@ html{
   margin-top: 3%;
   background-color: #f6f6f6;
   padding-bottom: 3%;
+  box-shadow: 2px 2px 5px 5px #000;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#brukertest {
+  margin-top: 3%;
+  background-color: #FFFFFF;
+  padding-bottom: 3%;
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px black, -12px 0 15px -4px black;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #second {
   margin-top: 3%;
   background-color: #f6f6f6;
   padding-bottom: 3%;
+     box-shadow: 2px 2px 5px 5px #000;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #third {
@@ -32,6 +47,9 @@ html{
   background-color: #f6f6f6;
   padding-bottom: 3%;
   align-items: center;
+     box-shadow: 2px 2px 5px 5px #000;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #file{
@@ -45,6 +63,19 @@ html{
     margin-left: auto;
     margin-right: auto;
  }
+
+#gif{
+    align-content: center;
+    padding-left: 20%;
+    width: 75%;
+    display: block;
+}
+
+#knapp{
+    margin-left: 43%;
+    margin-top: 10%;
+    padding:2%;
+}
 
 #myBtn {
   display: none;
