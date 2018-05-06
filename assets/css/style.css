@@ -1,27 +1,6 @@
-p {
-  color: black;
-  line-height: 200%;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
-}
-
-html{
+html body{
   background-color: #3f3f3f;
   padding-bottom: 4%;
-}
-
-#navbarcool{
-    border-radius: 0px;
-    background-color: #202020;
-}
-
-#first {
-  margin-top: 3%;
-  background-color: #f6f6f6;
-  padding-bottom: 3%;
-  box-shadow: 2px 2px 5px 5px #000;
-    padding-left: 2%;
-    padding-right: 2%;
 }
 
 #brukertest {
@@ -33,36 +12,36 @@ html{
     padding-right: 2%;
 }
 
-#second {
+#first {
   margin-top: 3%;
-  background-color: #f6f6f6;
+  background-color: #FFFFFF;
   padding-bottom: 3%;
-     box-shadow: 2px 2px 5px 5px #000;
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px black, -12px 0 15px -4px black;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#second {
+  margin-top: 5%;
+  background-color: #FFFFFF;
+  padding-bottom: 3%;
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px black, -12px 0 15px -4px black;
     padding-left: 2%;
     padding-right: 2%;
 }
 
 #third {
-  margin-top: 3%;
-  background-color: #f6f6f6;
+  margin-top: 5%;
+  background-color: #FFFFFF;
   padding-bottom: 3%;
-  align-items: center;
-     box-shadow: 2px 2px 5px 5px #000;
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px black, -12px 0 15px -4px black;
     padding-left: 2%;
     padding-right: 2%;
 }
 
-#file{
-  width: 40%;
-  border-radius: 10%;
-  border: 1px solid black;
+#fil:hover {
+  opacity: 0.55;
 }
-
-.center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
 
 #gif{
     align-content: center;

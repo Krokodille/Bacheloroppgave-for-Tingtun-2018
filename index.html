@@ -1,68 +1,106 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Bachelorprosjekt</title>
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <meta charset="utf-8"/>
-  </head>
 
-  <body>
-    <div class="navbar navbar-dark bg-dark" id="navbarcool">
-      <a class="navbar-brand">Gruppe 30</a>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bachelorside</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script>
+  		if (window.addEventListener) {
+  			var state = 0,
+  				konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+  			window.addEventListener("keydown", function(e) {
+  				if (e.keyCode == konami[state]) state++;
+  				else state = 0;
+  				if (state == 10)
+  					window.location = "brukertest.html";
+  			}, true);
+  		}
+  		var pane = $('#pane'),
+  			box = $('#box'),
+  			w = pane.width() - box.width(),
+  			d = {},
+  			x = 3;
+
+  		function newv(v, a, b) {
+  			var n = parseInt(v, 10) - (d[a] ? x : 0) + (d[b] ? x : 0);
+  			return n < 0 ? 0 : n > w ? w : n;
+  		}
+  		$(window).keydown(function(e) {
+  			d[e.which] = true;
+  		});
+  		$(window).keyup(function(e) {
+  			d[e.which] = false;
+  		});
+  		setInterval(function() {
+  			box.css({
+  				left: function(i, v) {
+  					return newv(v, 37, 39);
+  				},
+  				top: function(i, v) {
+  					return newv(v, 38, 40);
+  				}
+  			});
+  		}, 20);
+  	</script>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8 offset-lg-2" id="first">
+                    <h1>Bachelorprosjekt gruppe 30<br></h1>
+                    <hr>
+                    <p><br>Oppdragsgiver:&nbsp;<a href="http://www.tingtun.no/">Tingtun</a><br><br>Om prosjektet: Oppgaven tar for seg å måle effekten av tilgang til begrepsforklaringer for ulike brukergrupper, gjerne brukere med dysleksi eller fremmedspråklige
+                        (flyktninger). Testene skal avdekke effekter for hvor godt brukere kan forstå tekster, f.eks. målt ved å se på hvor lang tid det tar for å besvare forståelsesspørsmål. Testene kan evt. og gi opplysninger om hvordan løsningen kan
+                        utformes bedre for å forsterke effekten for ulike brukergrupper. Utformingen kan da gjelde både tekster, varianter av oppslagsmetoder eller presentasjonsformer.<br><br></p>
+                </div>
+                <div class="col-lg-8 offset-lg-2" id="second">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <h4 style="padding-top: 1%;">Studener</h4>
+                            <hr>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Sigrid Riiser Kristiansen<br><br>E-post: s181090@oslomet.no<br><br></p>
+                        </div>
+                        <div class="col">
+                            <p>Patrick Ingeberg<br><br>E-post: s236303@oslomet.no<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-2" id="third">
+                    <div class="row">
+                      <div class="col-lg-12">
+
+                          <h4 style="padding-top: 1%;">Dokumenter</h4>
+                          <hr>
+                      </div>
+                        <div class="col-lg-6">
+                            <p style="margin-left:3%;">Prosjektskisse<br></p>
+                            <a href="http://student.cs.hioa.no/~s236303/bachelor/documents/Prosjektskisse.pdf"/>
+                            <i class="fa fa-file-o" id="fil" style="font-size:60px; color: black; margin-left:10%"></i></div>
+                          </a>
+                        <div class="col-lg-6">
+                            <p style="margin-left:3%;">Prosjektdefinisjon<br></p>
+                            <a href="http://student.cs.hioa.no/~s236303/bachelor/documents/Prosjektdefinisjon.pdf">
+                            <i class="fa fa-file-o" id="fil" style="font-size:60px; color: black; margin-left:10%"></i></div>
+                          </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <img src="bilder/previous.png" onclick="topFunction()" id="myBtn" title="Go to top"/>
-      <div class="col-md-6 col-md-offset-3" id="first">
-        <h1>Bachelorprosjekt gruppe 30</h1>
-        <hr>
-        <div class="informasjon">
-          <p>Oppdragsgiver: <a href="http://www.tingtun.no">Tingtun </a></p>
-          <p>Om prosjektet: Oppgaven tar for seg å måle effekten av tilgang til begrepsforklaringer for ulike brukergrupper,
-            gjerne brukere med dysleksi eller fremmedspråklige (flyktninger).
-            Testene skal avdekke effekter for hvor godt brukere kan forstå tekster, f.eks.
-            målt ved å se på hvor lang tid det tar for å besvare forståelsesspørsmål.
-            Testene kan evt. og gi opplysninger om hvordan løsningen kan utformes bedre for å forsterke effekten for ulike brukergrupper.
-            Utformingen kan da gjelde både tekster, varianter av oppslagsmetoder eller presentasjonsformer.</p>
-        </div>
-      </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
 
-      <div class="col-md-6 col-md-offset-3" id="second">
-        <p>Studenter: </p>
-        <div class="col-md-6 col-sm-6">
-          <p class="text-center">Sigrid Riiser Kristiansen</p>
-          <p class="text-center">E-post: s181090@stud.hioa.no</p>
-        </div>
-
-        <div class="col-md-6 col-sm-6">
-          <p class="text-center">Patrick Ingeberg</p>
-          <p class="text-center">E-post: s236303@stud.hioa.no</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-md-offset-3" id="third">
-        <div class="col-md-4 col-sm-4" id="test1">
-          <p class="text-center">Statusrepport</p>
-          <a href="http://student.cs.hioa.no/~s236303/bachelor/brukertest.html">
-          <img class="center-block" id="file" src="bilder/file.png" href=""/>
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-4" id="test1">
-          <p class="text-center">Prosjektskisse</P>
-            <a href="http://student.cs.hioa.no/~s236303/bachelor/documents/Prosjektskisse.pdf"/>
-            <img class="center-block" id="file" src="bilder/file.png"/>
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-4" id="test1">
-          <p class="text-center">Prosjektdefinisjon</p>
-          <a href="http://student.cs.hioa.no/~s236303/bachelor/documents/Prosjektdefinisjon.pdf">
-            <img class="center-block" id="file" src="bilder/file.png"/>
-          </a>
-        </div>
-      </div>
-    </body>
 </html>
 
 <script>
